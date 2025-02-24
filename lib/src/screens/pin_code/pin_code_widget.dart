@@ -139,14 +139,14 @@ class PinCodeState<T extends PinCodeWidget> extends State<T> {
         padding: EdgeInsets.only(left: 40.0, right: 40.0, bottom: 40.0),
         child: Column(
           children: <Widget>[
-            Spacer(flex: 2),
+            Spacer(flex: 3),
             Text(title,
                 style: TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.w500,
                     color:
                         Theme.of(context).extension<CakeTextTheme>()!.titleColor)),
-            Spacer(flex: 3),
+            Spacer(flex: 4),
             Container(
               width: 180,
               child: Row(
@@ -168,7 +168,7 @@ class PinCodeState<T extends PinCodeWidget> extends State<T> {
                 }),
               ),
             ),
-            Spacer(flex: 2),
+            Spacer(flex: 6),
             if (widget.hasLengthSwitcher) ...[
               TextButton(
                 onPressed: () {
@@ -185,7 +185,7 @@ class PinCodeState<T extends PinCodeWidget> extends State<T> {
                 ),
               )
             ],
-            Spacer(flex: 1),
+            Spacer(flex: 2),
             Flexible(
               flex: 24,
               child: Center(
